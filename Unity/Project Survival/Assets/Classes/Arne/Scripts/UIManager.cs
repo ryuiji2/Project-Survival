@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
 		CheckHealth();
 	}
 	//checks health and updates ui
-	public void CheckHealth ()
+	public void CheckHealth () //needs overload so it can receive health or take damage
 	{
 		//get a percentage of health, because fillamount is between 1 and 0
 		healthPercentage = health / maxHP;
@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
 		
 	}
 	//checks ammo and updates ui    	NOT MADE YET
-	public void CheckAmmo () 
+	public void CheckAmmo () //needs overload so it can receive health or damage
 	{
 
 	}
