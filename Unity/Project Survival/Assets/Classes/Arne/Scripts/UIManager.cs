@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 	//all menu items
 	public List<RectTransform> allMenuItems = new List<RectTransform>();
 	public RectTransform mainMenu, pauseMenu; //gonna add more to these 
-	enum UIState {MainMenu, Ingame};
+	public enum UIState {MainMenu, Ingame};
 	public UIState _UIState;
 	public KeyCode key;
 
@@ -39,14 +39,14 @@ public class UIManager : MonoBehaviour
 	}
 	void CheckUIState () 
 	{
-		switch (UIState)
+		switch (_UIState)
         {
-        case _UIState.MainMenu:
+        case UIState.MainMenu:
 
             
             break;
 
-        case _UIState.Ingame:
+        case UIState.Ingame:
 
             
             break;
